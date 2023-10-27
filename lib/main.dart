@@ -1,18 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:tracka/src/screens/home_screen.dart';
+import 'package:tracka/src/screens/splash_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const TrakaApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class TrakaApp extends StatelessWidget {
+  const TrakaApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
+    return MaterialApp(
+      title: 'Traka',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const SplashScreen(),
     );
   }
 }
