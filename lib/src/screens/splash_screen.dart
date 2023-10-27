@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // Navigate to the next screen (e.g., Authentication) after a delay
     Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
-          context, MaterialPageRoute(builder: (_) => const HomePage()));
+          context, MaterialPageRoute(builder: (_) => const HomeScreen()));
     });
   }
 
