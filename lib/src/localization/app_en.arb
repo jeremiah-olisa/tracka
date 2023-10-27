@@ -1,0 +1,6 @@
+{
+  "appTitle": "tracka",
+  "@appTitle": {
+    "description": "The title of the application"
+  }
+}
