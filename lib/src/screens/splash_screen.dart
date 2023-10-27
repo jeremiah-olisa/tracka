@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     // Navigate to the next screen (e.g., Authentication) after a delay
-    Future.delayed(const Duration(seconds: 500), () {
+    Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (_) => const HomePage()));
     });
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsetsDirectional.symmetric(horizontal: 20),
+              padding: const EdgeInsetsDirectional.symmetric(horizontal: 40),
               child: trackaLogo,
             )
           ],
