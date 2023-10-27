@@ -192,3 +192,5 @@ Provide users with an intuitive platform to track and manage their financial tra
 **Week 4**:
 - **Bug Fixes & Final Refinements**: Address issues from the testing phase. Polish UI/UX aspects based on feedback.
 - **Documentation**: Ensure all features, APIs, and other aspects are well-documented for future reference or for other developers.
+
+<!-- Logo Font: Neuer Weltschmerz -->
