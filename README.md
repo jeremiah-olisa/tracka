@@ -1,7 +1,7 @@
 # Traka - Financial Tracking Application
 
 
-![Flutter Logo](./assets/images/2.0x/flutter_logo.png)
+![Flutter Logo](./assets/images/word-mark-logo-light.svg)
 
 
 ## Product Requirements Document (PRD)
