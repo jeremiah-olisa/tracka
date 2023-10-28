@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 
 class BottomNavigation extends StatelessWidget {
-  void Function(int)? onTabChange;
+  final void Function(int)? onTabChange;
 
-  BottomNavigation({super.key, required this.onTabChange});
+  const BottomNavigation({super.key, required this.onTabChange});
 
   // This is a placeholder for your next screen (e.g., Authentication Screen)
   @override

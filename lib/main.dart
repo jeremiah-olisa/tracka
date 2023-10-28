@@ -16,6 +16,7 @@ class TrakaApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      initialRoute: '/',
       home: const SplashScreen(),
     );
   }
