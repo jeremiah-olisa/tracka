@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tracka/src/constants/colors.dart';
+import 'package:tracka/src/widgets/account_balance_card.dart';
 import 'package:tracka/src/widgets/bottom_nav.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,29 +13,39 @@ class HomeScreen extends StatelessWidget {
       showDialog(
         context: context,
         builder: (context) {
-          return const AlertDialog();
+          return const AlertDialog(
+            title: Text("Add Entry"),
+            content: Text("You have raised a Alert Dialog Box"),
+          );
         },
       );
     }
 
     return Scaffold(
-      backgroundColor: const Color(0xffFFFFF2),
+      backgroundColor: appColors['light'],
       floatingActionButton: FloatingActionButton(
         onPressed: addEntry,
+        backgroundColor: appColors['main'],
         child: const Icon(Icons.add),
       ),
       drawer: const Drawer(),
       appBar: AppBar(
         title: const Text("TRACKA"),
-        backgroundColor: const Color(0xff1D739F),
+        backgroundColor: appColors['main'],
         centerTitle: true,
+        elevation: 0,
       ),
       bottomNavigationBar: BottomNavigation(
         onTabChange: (index) => {},
       ),
-      body: const Center(
-        child: Text("Home Screen"),
-      ),
+      body: Column(children: [
+        Container(
+            margin: const EdgeInsets.only(top: 20, right: 10, left: 17),
+            child: const Text(
+              "Account Balance: N1200",
+              style: TextStyle(fontSize: 22),
+            )),
+      ]),
     );
   }
 }
